@@ -87,11 +87,11 @@ def format_phone(num):
 def do_zip_update():
     success = False
     if DEBUG_MODE:
-        zip_url = "https://github.com/TheSpeedX/TBomb/archive/dev.zip"
-        dir_name = "TBomb-dev"
+        zip_url = "https://github.com/ravisharma011/SMSBOMBING/archive/refs/heads/main.zip"
+        dir_name = "SMSBOMBING-main"
     else:
-        zip_url = "https://github.com/TheSpeedX/TBomb/archive/master.zip"
-        dir_name = "TBomb-master"
+        zip_url = "https://github.com/ravisharma011/SMSBOMBING/archive/refs/heads/main.zip"
+        dir_name = "SMSBOMBING-main"
     print(ALL_COLORS[0]+"Downloading ZIP ... "+RESET_ALL)
     response = requests.get(zip_url)
     if response.status_code == 200:
